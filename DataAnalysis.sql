@@ -1,9 +1,9 @@
-SELECT * FROM departments
+
 --List the employee number, last name, first name, sex, and salary of each employee.
 SELECT emp.emp_no, emp.first_name, emp.last_name, emp.sex, s.salary
 FROM employees as emp
 JOIN salaries as s
-ON e.emp_no = s.emp_no;
+ON emp.emp_no = s.emp_no;
 
 --List the first name, last name, and hire date for the employees who were hired in 1986.
 SELECT first_name, last_name, hire_date

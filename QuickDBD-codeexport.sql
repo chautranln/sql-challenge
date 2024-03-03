@@ -64,3 +64,10 @@ REFERENCES "titles" ("title_id");
 ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
 
+--Confirm data entered into tables
+SELECT * from departments;
+SELECT * from titles;
+SELECT * from employees;
+SELECT * from dept_emp;
+SELECT * from dept_manager;
+SELECT * from salaries;
